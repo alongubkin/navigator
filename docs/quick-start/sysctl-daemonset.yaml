@@ -1,10 +1,6 @@
 # Apply sysctl configuration required by Elasticsearch
 #
 # This DaemonSet will re-run sysctl every 60s on all nodes.
-#
-# XXX See CronJob daemonset which will allow scheduling one-shot or repeated
-# jobs across nodes:
-# https://github.com/kubernetes/kubernetes/issues/36601
 
 apiVersion: "extensions/v1beta1"
 kind: "DaemonSet"
